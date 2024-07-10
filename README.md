@@ -4,7 +4,7 @@ This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Ne
 
 ## Getting Started
 
-First, run the development server:
+To get started and deploy the server:
 
 ```bash
 npm run dev
@@ -12,7 +12,20 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+if you need to start the server using docker, then:
+
+```bash
+docker build -t secure_wallet_2 . 
+```
+
+```bash
+docker run -p 3000:3000 secure_wallet_2:latest
+```
+
+Next, you need to open:
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 
 ## Learn More
 
@@ -22,7 +35,6 @@ To learn more about this stack, take a look at the following resources:
 - [wagmi Documentation](https://wagmi.sh) - Learn how to interact with Ethereum.
 - [Next.js Documentation](https://nextjs.org/docs) - Learn how to build a Next.js application.
 
-You can check out [the RainbowKit GitHub repository](https://github.com/rainbow-me/rainbowkit) - your feedback and contributions are welcome!
 
 
 
